@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <style>
+        .header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 1000px;
+            margin: 0 auto;
+
+        }
+        .content {
+            /*display: flex;*/
+            /*flex-direction: row;*/
+            /*justify-content: space-between;*/
+        }
+        .logo {
+            /*flex*/
+        }
+    </style>
+</head>
+
+<body>
+<div id="app">
+    <div class="content">
+        <div class="header">
+            <div class="logo">
+                {{ logo }}
+            </div>
+            <div class="userName">
+                {{ userName }}
+            </div>
+        </div>
+    </div>
+    <div class="content">
+
+    </div>
+</div>
+
+</body>
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            logo: 'Logo',
+            userName: 'Hello Vue!'
+        }
+    })
+</script>
+</html>
